@@ -16,12 +16,6 @@ html {
       padding-bottom: 5px;
     }
     #main {
-      a:not([href*='pzja.gov.au']):not([href*='.local']):not([href*='.xing.com.au']):not([href*='govcms.gov.au']):not([href^='#']):not([href^='/']):after {
-        font-family: "govstrap-icons";
-        content: "\e905";
-        margin-left: 5px;
-        font-size: 12px;
-      }
       @media screen and (max-width: $screen-xs-max) {
         &.container {
           padding: 0;
