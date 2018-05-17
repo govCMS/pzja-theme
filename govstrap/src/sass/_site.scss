@@ -986,3 +986,8 @@ body.front {
     font-size: 32px;
   }
 }
+
+// Fix RHS sidebar position when no breadcrumb is displayed
+#content aside {
+  margin-top: 25px;
+}
