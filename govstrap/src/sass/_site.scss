@@ -809,6 +809,9 @@ html {
             }
             &.active {
               background: lighten($lightBlue, 40%);
+              &:hover {
+                background: lighten($primaryBlue, 10%);
+              }
             }
           }
           & > ul {

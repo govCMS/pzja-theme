@@ -52,8 +52,13 @@ function _get_active_page_parent() {
   // Determine current page's parent
   $active_page_parent = '';
   $active_trail = menu_get_active_trail();
-  if ($active_trail[1]) {
-    $parent = $active_trail[1];
+  if (is_array($active_trail)) {
+    if (count($active_trail) == 2) {
+      $parent = prev($active_trail);
+    }
+    if (count($active_trail) > 2) {
+      $parent = $active_trail[1];
+    }
     if ($parent['link_title']) {
       $active_page_parent = '<ul class="menu">';
       $active_page_parent .= '<li class="leaf active-trail">';
