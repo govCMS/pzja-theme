@@ -36,7 +36,9 @@
       });
       $('a[data-toggle="lightbox"]').click(function(event) {
         event.preventDefault();
-        $(this).ekkoLightbox();
+        $(this).ekkoLightbox({
+          alwaysShowClose: true,
+        });
       });
     }
   };

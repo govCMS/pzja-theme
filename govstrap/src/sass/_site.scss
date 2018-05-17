@@ -308,11 +308,17 @@ html {
             overflow: hidden;
             text-indent: -9999px;
             &:before {
-              content: "\e912";
+              background-image: url('../img/home.png');
+              background-repeat: no-repeat;
+              background-size: cover;
+              background-position-x: 0;
+              background-position-y: 0;
+              width: 18px;
+              height: 18px;
+              content: "";
               text-indent: 0;
               float: left;
               margin: 0;
-              font-family: "govstrap-icons";
               font-style: normal;
               display: inline-block;
               text-decoration: inherit;
@@ -320,6 +326,9 @@ html {
               font-variant: normal;
               text-transform: none;
               line-height: 1em;
+            }
+            &:hover:before {
+              background-position-y: -18px;
             }
           }
           @media screen and (max-width: $screen-xs-max) {
@@ -970,4 +979,7 @@ body.front {
   flex: 100%!important;
   margin-left: 0;
   margin-right: 0;
+  .close {
+    font-size: 32px;
+  }
 }
