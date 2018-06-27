@@ -870,7 +870,7 @@ html {
       img {
         max-width: 100%;
         height: auto;
-        display: block;
+        display: inline-block;
         background: lighten($bgGrey, 5%);
         padding: 5px;
         border: 1px solid $lightGrey;
